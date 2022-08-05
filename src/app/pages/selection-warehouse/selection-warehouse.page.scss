@@ -1,0 +1,64 @@
+.header{
+    text-align: center;
+    position: relative;
+    top: 36px;
+}
+
+
+p{
+    font-size: 12px;;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+}
+
+
+.container{
+    margin-top: 85px;
+    margin-top: 74px;
+    position: absolute;
+    width: 289px;
+    margin-left: 32px
+}
+
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 315px;
+    background-color: green;
+    height: 38px;
+    width: 146px;
+
+}
+
+ion-select{
+  
+    
+}
+
+#cercle1{
+    width : 115px;
+    height : 115px;
+    background : #00800080;
+    -moz-border-radius : 45px;
+    -webkit-border-radius : 25px;
+    border-radius: 55px;  /* ou 50% */
+    margin-left: 54px;
+    
+ 
+  }
+  #cercle2{
+    width: 115px;
+    height: 115px;
+    background: rgba(0, 128, 0, 0.5019607843);
+    border-radius: 55px;
+    margin-top: -120px;
+    margin-left: -29px;
+    position: absolute;
+    
+  }
+
+  button>p{
+      color: white;
+  }
