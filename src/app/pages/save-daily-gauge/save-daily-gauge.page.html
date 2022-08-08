@@ -7,31 +7,58 @@
 <ion-content>
 
 
-  <div>
-   <ion-item>
+
+  <ion-item>
 
     <ion-select interface="popover" placeholder="Resources">
       <ion-select-option value="apples">Super</ion-select-option>
       <ion-select-option value="oranges">Gasoil</ion-select-option>
       <ion-select-option value="ananas">Petrole</ion-select-option>
     </ion-select>
-    
-      <ion  -datetime-button slot="end" color="success"  datetime="datetime"></ion-datetime-button>
 
-      <ion-modal [keepContentsMounted]="true">
-        <ng-template>
-          <ion-datetime id="datetime"></ion-datetime>
-        </ng-template>
-      </ion-modal>
+    <ion-datetime-button slot="end" color="success" date-target="true" datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Heure de travail :</ion-label>
+    <ion-label>
+      <div class="bloc">
+        <div class="select">
+          <select>
+            <option>Vous êtes plutôt ?</option>
+            <option value="1">PlayStation</option>
+            <option value="2">Xbox</option>
+            <option value="3">Nintendo</option>
+            <option value="4">PC Master Race</option>
+          </select>
+  
+        </div>
+      </div>
+      
+      
+    </ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-label> Equipe jour:</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label> Volume ouverture:</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label> Volume fermeture:</ion-label>
+  </ion-item>
 
 
 
-   
-    
-   </ion-item>
 
-   
-    
-  </div>
+
+
 
 </ion-content>
