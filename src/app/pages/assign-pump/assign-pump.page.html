@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>saveDailyGauge</ion-title>
+    <ion-title>assignPump</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,14 +9,8 @@
 
 
   <ion-item>
-
-    <ion-select interface="popover" placeholder="Resources">
-      <ion-select-option value="apples">Super</ion-select-option>
-      <ion-select-option value="oranges">Gasoil</ion-select-option>
-      <ion-select-option value="ananas">Petrole</ion-select-option>
-    </ion-select>
-
-    <ion-datetime-button slot="end" color="success" date-target="true" datetime="datetime"></ion-datetime-button>
+    <ion-icon name="calendar"></ion-icon>
+    <ion-datetime-button slot="end"  date-target="true" datetime="datetime"></ion-datetime-button>
 
     <ion-modal [keepContentsMounted]="true">
       <ng-template>
@@ -31,18 +25,18 @@
       <ion-label> Hour of work :</ion-label>
     </div>
 
-    <ion-label>
 
+    
       <div class="select">
         <select>
           <option value="1">5h/13</option>
           <option value="2">13h/21</option>
         </select>
-
+    
       </div>
-
-    </ion-label>
+  
   </div>
+
 
 
   <div class="bloc">
@@ -66,7 +60,8 @@
 
     <div class="bloc2">
       <div class="jauge">
-        <ion-label> opening volume:</ion-label>
+        <ion-label> gas station attendant
+          :</ion-label>
       </div>
 
       <div class="input">
@@ -78,32 +73,13 @@
 
    
 
-    <div class="bloc3">
-      <div class="jauge">
-        <ion-label> closing volume:</ion-label>
-      </div>
-
-      <div class="input">
-        <p><input type="text" name="pseudo" /> </p>
-
-      </div>
-
-    </div>
-
-    <div>
-      <div class="jauge">
-        <ion-label> Volume de carburant sorti:</ion-label>
-        <ion-chip>
-          <ion-label > <strong>1000</strong>  </ion-label>
-        </ion-chip>
-        
-      </div>
-    </div>
+   
 
     <ion-row >
       <ion-col text-center>
         <button ion-button block  class="button">
-         <p> <strong>Validate</strong>   </p> 
+         <p> <strong>Validate  <ion-icon class="icon" name="chevron-forward"></ion-icon></strong>   </p> 
+        
         </button>
       </ion-col>
     </ion-row>

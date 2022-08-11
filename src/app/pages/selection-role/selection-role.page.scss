@@ -14,9 +14,7 @@
 ion-checkbox{
     --border-radius: 15px;
     // --background-checked:green;
-    --border-width:1px;
-   
-   
+    --border-width:1px;  
 }
 
 .button{
@@ -56,3 +54,10 @@ button>p{
     position: absolute;
     
   }
+
+
+  ion-checkbox{
+    --border-radius: 15px;
+    // --background-checked:green;
+    --border-width:1px;  
+}

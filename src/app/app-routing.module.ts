@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'save-daily-gauge',
     loadChildren: () => import('./pages/save-daily-gauge/save-daily-gauge.module').then( m => m.SaveDailyGaugePageModule)
+  },
+  {
+    path: 'assign-pump',
+    loadChildren: () => import('./pages/assign-pump/assign-pump.module').then( m => m.AssignPumpPageModule)
   }
 ];
 
