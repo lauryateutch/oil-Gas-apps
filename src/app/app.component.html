@@ -1,3 +1,80 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="menId">
+    <ion-menu contentId="menId" menuId="menId" side="start" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+
+
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name='home' slot="start"></ion-icon>
+            <ion-label >daily Gauge</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name='nutrition' slot="start"></ion-icon>
+            <ion-label >Daily fuel output</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name='nutrition' slot="start"></ion-icon>
+            <ion-label >Assign pump</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name="construct-outline"></ion-icon>
+            <ion-label color="">build Team</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name="man"></ion-icon>
+            <ion-label color="">Info Team</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item >
+            <ion-icon name="information-circle-sharp"></ion-icon>
+            <ion-label color="">About</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item>
+            <ion-icon name="settings-sharp"></ion-icon>
+            <ion-label color="">settings</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+
+
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="menId"></ion-router-outlet>
+  </ion-split-pane>
+
+
 </ion-app>

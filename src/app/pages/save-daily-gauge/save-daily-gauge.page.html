@@ -1,8 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>saveDailyGauge</ion-title>
+    <ion-title>save Daily Gauge</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menId"> </ion-menu-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
+
+
 
 <ion-content>
 
@@ -10,12 +16,7 @@
 
   <ion-item>
 
-    <ion-select interface="popover" placeholder="Resources">
-      <ion-select-option value="apples">Super</ion-select-option>
-      <ion-select-option value="oranges">Gasoil</ion-select-option>
-      <ion-select-option value="ananas">Petrole</ion-select-option>
-    </ion-select>
-
+    <ion-icon slot="start" name="calendar"></ion-icon>
     <ion-datetime-button slot="end" color="success" date-target="true" datetime="datetime"></ion-datetime-button>
 
     <ion-modal [keepContentsMounted]="true">
@@ -23,6 +24,16 @@
         <ion-datetime id="datetime"></ion-datetime>
       </ng-template>
     </ion-modal>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon slot="start" name="cog"></ion-icon>
+    <ion-select slot="end" interface="popover" placeholder="Resources">
+      <ion-select-option value="super">Super</ion-select-option>
+      <ion-select-option value="gasoil">Gasoil</ion-select-option>
+      <ion-select-option value="petrole">Petrole</ion-select-option>
+    </ion-select>
+
   </ion-item>
 
 
@@ -64,49 +75,49 @@
   </div>
 
 
-    <div class="bloc2">
-      <div class="jauge">
-        <ion-label> opening volume:</ion-label>
-      </div>
+  <div class="bloc2">
+    <div class="jauge">
+      <ion-label> opening volume:</ion-label>
+    </div>
 
-      <div class="input">
-        <p><input type="text" name="pseudo" /> </p>
-
-      </div>
+    <div class="input">
+      <p><input type="text" name="pseudo" /> </p>
 
     </div>
 
-   
+  </div>
 
-    <div class="bloc3">
-      <div class="jauge">
-        <ion-label> closing volume:</ion-label>
-      </div>
 
-      <div class="input">
-        <p><input type="text" name="pseudo" /> </p>
 
-      </div>
+  <div class="bloc3">
+    <div class="jauge">
+      <ion-label> closing volume:</ion-label>
+    </div>
+
+    <div class="input">
+      <p><input type="text" name="pseudo" /> </p>
 
     </div>
 
-    <div>
-      <div class="jauge">
-        <ion-label> Volume de carburant sorti:</ion-label>
-        <ion-chip>
-          <ion-label > <strong>1000</strong>  </ion-label>
-        </ion-chip>
-        
-      </div>
-    </div>
+  </div>
 
-    <ion-row >
-      <ion-col text-center>
-        <button ion-button block  class="button">
-         <p> <strong>Validate</strong>   </p> 
-        </button>
-      </ion-col>
-    </ion-row>
+  <div>
+    <div class="jauge">
+      <ion-label> Volume de carburant sorti:</ion-label>
+      <ion-chip>
+        <ion-label> <strong>1000</strong> </ion-label>
+      </ion-chip>
+
+    </div>
+  </div>
+
+  <ion-row>
+    <ion-col text-center>
+      <button ion-button block class="button">
+        <p> <strong>Validate</strong> </p>
+      </button>
+    </ion-col>
+  </ion-row>
 
 
 

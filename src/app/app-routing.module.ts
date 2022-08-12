@@ -34,6 +34,18 @@ const routes: Routes = [
   {
     path: 'assign-pump',
     loadChildren: () => import('./pages/assign-pump/assign-pump.module').then( m => m.AssignPumpPageModule)
+  },
+  {
+    path: 'visualise-pump-gas-station-agent',
+    loadChildren: () => import('./pages/visualise-pump-gas-station-agent/visualise-pump-gas-station-agent.module').then( m => m.VisualisePumpGasStationAgentPageModule)
+  },
+  {
+    path: 'build-team',
+    loadChildren: () => import('./pages/build-team/build-team.module').then( m => m.BuildTeamPageModule)
+  },
+  {
+    path: 'team',
+    loadChildren: () => import('./pages/team/team.module').then( m => m.TeamPageModule)
   }
 ];
 
