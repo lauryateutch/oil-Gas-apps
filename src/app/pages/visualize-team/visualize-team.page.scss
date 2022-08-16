@@ -1,0 +1,36 @@
+.img-box {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+}
+.border-white {
+    border: #79b43f solid 4px;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 7%;
+}
+
+ion-item-divider{
+    --background:#79b43f;
+    --color: white;
+    --font-weight :bold;
+}
+
+.space{
+    height: 10%;
+}
+
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 83px;
+    background-color: #79b43f;
+    height: 38px;
+    width: 146px;
+
+}

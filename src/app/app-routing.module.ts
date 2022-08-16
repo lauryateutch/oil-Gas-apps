@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'team',
     loadChildren: () => import('./pages/team/team.module').then( m => m.TeamPageModule)
+  },
+  {
+    path: 'visualize-team',
+    loadChildren: () => import('./pages/visualize-team/visualize-team.module').then( m => m.VisualizeTeamPageModule)
   }
 ];
 

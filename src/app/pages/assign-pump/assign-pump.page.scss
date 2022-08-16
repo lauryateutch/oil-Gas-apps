@@ -74,7 +74,7 @@
     
     
     .select:hover::after {
-      color: green;
+      color: #79b43f;
     }
   
   .jauge{
@@ -97,7 +97,7 @@
   }
   
   ion-chip{
-    --background: green;
+    --background: #79b43f;
     color: white;
     margin-left: 121px;
     align-items: center;
@@ -105,7 +105,7 @@
   
   
   .validate{
-    background-color: green;
+    background-color: #79b43f;
     width: 1px;
     height: 2px;
   }
@@ -115,7 +115,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 83px;
-    background-color: green;
+    background-color: #79b43f;
     height: 38px;
     width: 100%;
   
