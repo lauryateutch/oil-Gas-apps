@@ -1,13 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>build Team</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu"></ion-menu-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-item>
     <ion-icon name="calendar"></ion-icon>
-    <ion-datetime-button slot="end"  date-target="true" datetime="datetime"></ion-datetime-button>
+    <ion-datetime-button slot="end" date-target="true" datetime="datetime"></ion-datetime-button>
 
     <ion-modal [keepContentsMounted]="true">
       <ng-template>
@@ -42,17 +46,17 @@
     </div>
 
 
-    
-      <div class="select">
-        <select>
-          <option value="1">Abena Tamo</option>
-          <option value="2">Toto titi</option>
-          <option value="2">Bobo still</option>
-          <option value="2">John Still</option>
-        </select>
-    
-      </div>
-  
+
+    <div class="select">
+      <select>
+        <option value="1">Abena Tamo</option>
+        <option value="2">Toto titi</option>
+        <option value="2">Bobo still</option>
+        <option value="2">John Still</option>
+      </select>
+
+    </div>
+
   </div>
 
 
@@ -81,18 +85,52 @@
   </div>
 
   <ion-item>
-    <ion-input placeholder="choisir un pompiste">  </ion-input>
+    <ion-input placeholder="choisir un pompiste"> </ion-input>
   </ion-item>
 
+  <div>
+    <ion-card *ngIf="addPompiste">
+      <ion-item lines="none">
+
+        <ion-input [(ngModel)]="Pompiste" placeholder="choisir un pompiste">
+
+          <ion-button slot="end">
+
+          </ion-button>
+
+        </ion-input>
+
+      </ion-item>
+
+    </ion-card>
 
 
-    <ion-row >
-      <ion-col text-center>
-        <button ion-button block  class="button">
-         <p> <strong>Build </strong>   </p> 
-        
-        </button>
-      </ion-col>
-    </ion-row>
+
+    <ion-button *ngIf="addPompiste" (click)="showForm()" expand="block" class="add-button">
+      <ion-icon name="add" slot="start"> </ion-icon>
+      ajouter un pompiste
+    </ion-button>
+
+    <ion-button *ngIf="addPompiste" (click)="showForm()" expand="block" class="add-button">
+      <ion-icon name="add" slot="start"> </ion-icon>
+      annuler
+    </ion-button>
+
+  </div>
+
+
+
+
+
+
+
+  <ion-row>
+    <ion-col text-center>
+      <button ion-button block class="but" [routerLink]="['/visualize-team']">
+        <p> <strong>Build </strong> </p>
+
+      </button>
+    </ion-col>
+  </ion-row>
 
 </ion-content>

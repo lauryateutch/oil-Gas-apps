@@ -75,14 +75,14 @@ select {
   
   
   .select:hover::after {
-    color: green;
+    color: #79b43f;
   }
 
 .jauge{
   margin-top: 6px;
   position: absolute;
   margin-left: 8px;
-}
+} 
 
   input{
     border-radius: 5px;
@@ -97,13 +97,6 @@ select {
     color: #555555;
 }
 
-ion-chip{
-  --background: green;
-  color: white;
-  margin-left: 121px;
-  align-items: center;
-}
-
 
 .validate{
   background-color: green;
@@ -111,24 +104,35 @@ ion-chip{
   height: 2px;
 }
 
-.button{
+.but{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 83px;
-  background-color: green;
+  background-color: #79b43f;
   height: 38px;
   width: 146px;
 
 }
 
 p{
-  font-size: 12px;;
+  font-size: 12px;
   line-height: 22px;
   color: white;
   margin: 0;
 }
 
+.affichagevolume{
+  height: 37px;
+  width: 118px;
+  background-color: #79b43f;
+}
+
+div> p{
+  color: white;
+  font-size: 20px;
+ 
+}
 
 
 

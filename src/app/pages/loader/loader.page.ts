@@ -10,6 +10,8 @@ export class LoaderPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    console.log('hello');
   }
 
 }

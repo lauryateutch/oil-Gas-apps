@@ -1,83 +1,60 @@
 <ion-app>
-  <ion-split-pane contentId="menId">
-    <ion-menu contentId="menId" menuId="menId" side="start" type="overlay">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
-          <ion-avatar slot="end">
-            <ion-img src="assets/images/logo.png"> </ion-img>
-          </ion-avatar>
+  <ion-split-pane contentId="menu">
+    <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
 
+      <ion-header>
+        <ion-toolbar color="light"> 
+          <ion-title> Menu</ion-title>
         </ion-toolbar>
+       
       </ion-header>
 
 
       <ion-content>
 
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name='home' slot="start"></ion-icon>
-            <ion-label>daily Gauge</ion-label>
+        <ion-menu-toggle autoHide="false">
+          <ion-item [routerLink]="['/save-daily-gauge']" >
+           
+            <ion-avatar slot="start">
+              <img src="/assets/images/gauge.png">
+            </ion-avatar>
+            <ion-label> save daily Gauge </ion-label>
           </ion-item>
-
         </ion-menu-toggle>
 
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name='nutrition' slot="start"></ion-icon>
-            <ion-label>Daily fuel output</ion-label>
+        <ion-menu-toggle autoHide="false">
+          <ion-item [routerLink]="['/build-team']">
+            <ion-avatar slot="start">
+              <img  src="/assets/images/team.png">
+            </ion-avatar>
+            <ion-label> Build Team </ion-label>
           </ion-item>
-
         </ion-menu-toggle>
 
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name='nutrition' slot="start"></ion-icon>
-            <ion-label>Assign pump</ion-label>
+        <ion-menu-toggle autoHide="false">
+          <ion-item [routerLink]="['/visualize-team']">
+            <ion-avatar slot="start">
+              <img  src="/assets/images/team.jpeg">
+            </ion-avatar>
+            <ion-label> Visualize Team </ion-label>
           </ion-item>
-
         </ion-menu-toggle>
 
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name="construct-outline"></ion-icon>
-            <ion-label>build Team</ion-label>
+        <ion-menu-toggle autoHide="false">
+          <ion-item [routerLink]="['/assign-pump']">
+            <ion-avatar slot="start">
+              <img  src="/assets/images/gas agent station.png">
+            </ion-avatar>
+            <ion-label> Assign pump </ion-label>
           </ion-item>
-
         </ion-menu-toggle>
-
-
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name="man"></ion-icon>
-            <ion-label>Info Team</ion-label>
-          </ion-item>
-
-        </ion-menu-toggle>
-
-
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name="information-circle-sharp"></ion-icon>
-            <ion-label>About</ion-label>
-          </ion-item>
-
-        </ion-menu-toggle>
-
-        <ion-menu-toggle auto-hide="false">
-          <ion-item>
-            <ion-icon name="settings-sharp"></ion-icon>
-            <ion-label>settings</ion-label>
-          </ion-item>
-
-        </ion-menu-toggle>
-
-
 
 
       </ion-content>
+
     </ion-menu>
-    <ion-router-outlet id="menId"></ion-router-outlet>
+
+    <ion-router-outlet id="menu"> </ion-router-outlet>
   </ion-split-pane>
 
 

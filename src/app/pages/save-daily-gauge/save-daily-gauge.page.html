@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar >
-    <ion-buttons slot="start" class="iontoolbar">
-      <ion-menu-button menu="menId"> </ion-menu-button>
-    </ion-buttons>
-
-    <ion-title class="iontoolbar">save Daily Gauge</ion-title>
     
+    <ion-title >save Daily Gauge</ion-title>
+
+    <ion-buttons slot="start"> 
+           <ion-menu-button menu="menu"></ion-menu-button>
+    </ion-buttons>
+    
+
+
   </ion-toolbar>
 </ion-header>
 
@@ -102,7 +105,30 @@
 
   </div>
 
-  <div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Volume Carburant Sorti de la cuve</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-chip>
+          <ion-label> <strong>1000</strong> </ion-label>
+        </ion-chip>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+ -->
+ <div class="affichagevolume">
+   <p> <strong>1000000 m³</strong> </p>
+
+ 
+ </div>
+
+ 
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <div>
     <div class="jauge">
       <ion-label> Volume de carburant sorti:</ion-label>
       <ion-chip>
@@ -110,11 +136,11 @@
       </ion-chip>
 
     </div>
-  </div>
+  </div> -->
 
   <ion-row>
     <ion-col text-center>
-      <button ion-button block class="button">
+      <button ion-button block class="but">
         <p> <strong>Validate</strong> </p>
       </button>
     </ion-col>
