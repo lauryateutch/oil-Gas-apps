@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'visualize-team',
     loadChildren: () => import('./pages/visualize-team/visualize-team.module').then( m => m.VisualizeTeamPageModule)
+  },
+  {
+    path: 'gauge-status',
+    loadChildren: () => import('./pages/gauge-status/gauge-status.module').then( m => m.GaugeStatusPageModule)
   }
 ];
 
