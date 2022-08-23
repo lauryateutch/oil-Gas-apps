@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaugeStatusPage implements OnInit {
 
-  constructor() { }
+  addButton: boolean;
+  myIcon: string='checkmark-circle-outline';
+  myIcon1:string='close-circle-outline';
+  status: string='true';
+
+  constructor() { 
+
+
+
+  }
 
   ngOnInit() {
+
+
   }
+
+
+
+showButton(){
+  this.addButton=!this.addButton;
+
+}
 
 }

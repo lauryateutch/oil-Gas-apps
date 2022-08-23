@@ -1,18 +1,40 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>gauge Status</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu"></ion-menu-button>
+    </ion-buttons>
+   <!--  <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <div class="headerbloc">
+        <ion-card-title>Let's make your daily Gauge </ion-card-title>
+        
+          <ion-img class="imageheader" src="assets/images/cuve.png"></ion-img>
+
+
+      </div>
+      
+    </ion-card-header>
+    <ion-card-content>
+     
+
+    </ion-card-content>
+  </ion-card>
   <br>
-  <br>
+  
   <ion-grid>
     <!-- entête tableau -->
     <div class="header">
       <ion-row>
         <ion-col>
-          Cuve 
+          Cuve
         </ion-col>
         <ion-col>
           Equipe
@@ -28,9 +50,9 @@
         </ion-col>
       </ion-row>
     </div>
-    
-<!-- première ligne tableau-->    
-     <ion-row>
+
+    <!-- première ligne tableau-->
+    <ion-row>
       <ion-col>
         Cuve 1
       </ion-col>
@@ -41,15 +63,19 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <!-- <ion-icon *ngIf="status==='true'" name="checkmark-circle-outline"></ion-icon> -->
+        <ion-icon name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        action
+        <ion-button size="small" color="danger" [routerLink]="['/save-daily-gauge']">
+          save
+        </ion-button>
+
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        
+
       </ion-col>
       <ion-col>
         Equipe2-13h/21
@@ -58,34 +84,35 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <ion-icon *ngIf="status==='true'" name="checkmark-circle-outline"></ion-icon>
+        <ion-icon *ngIf="status==='false'" name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        action
+        <strong>Gauge validate</strong>
       </ion-col>
     </ion-row>
     <div class="spacer">
-      
+
     </div>
 
-    
+
     <div class="spacer">
       <ion-row>
         <ion-col>
-           
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
       </ion-row>
     </div>
-<!-- deuxième ligne tableau-->    
+    <!-- deuxième ligne tableau-->
 
     <ion-row>
       <ion-col>
@@ -98,15 +125,19 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <ion-icon *ngIf="status==='true'" name="checkmark-circle-outline"></ion-icon>
+        <ion-icon *ngIf="status==='false'" name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        action
+        <!-- <ion-button size="small" color="success">
+          save
+        </ion-button> -->
+        <strong>Gauge validate</strong>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        
+
       </ion-col>
       <ion-col>
         Equipe2-13h/21
@@ -115,25 +146,29 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <!--         <ion-icon *ngIf="status==='true'" name="checkmark-circle-outline"></ion-icon>
+ -->
+        <ion-icon name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        action
+        <ion-button size="small" color="danger" [routerLink]="['/save-daily-gauge']">
+          save
+        </ion-button>
       </ion-col>
     </ion-row>
     <div class="spacer">
       <ion-row>
         <ion-col>
-           
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
         <ion-col>
-          
+
         </ion-col>
       </ion-row>
     </div>
@@ -149,15 +184,18 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <!-- <ion-icon *ngIf="status==='true'" name="checkmark-circle-outline"></ion-icon> -->
+        <ion-icon name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        action
+        <ion-button size="small" color="danger" [routerLink]="['/save-daily-gauge']">
+          save
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        
+
       </ion-col>
       <ion-col>
         Equipe2-13h/21
@@ -166,17 +204,20 @@
         22/08/2022
       </ion-col>
       <ion-col>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <!-- <ion-icon *ngIf="status==='true'" color="success" name="checkmark-circle-outline"></ion-icon> -->
+        <ion-icon name="close-circle-outline"></ion-icon>
       </ion-col>
       <ion-col>
-        <ion-button >
+
+        <ion-button size="small" color="danger" [routerLink]="['/save-daily-gauge']">
           save
         </ion-button>
+
       </ion-col>
     </ion-row>
 
   </ion-grid>
 
-  
+
 
 </ion-content>

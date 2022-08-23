@@ -84,17 +84,17 @@
     </ion-label>
   </div>
 
-  <ion-item>
-    <ion-input placeholder="choisir un pompiste"> </ion-input>
-  </ion-item>
 
   <div>
     <ion-card *ngIf="addPompiste">
       <ion-item lines="none">
 
-        <ion-input [(ngModel)]="Pompiste" placeholder="choisir un pompiste">
+        <ion-input [(ngModel)]="pompiste" placeholder="chose gas station attendant">
 
-          <ion-button slot="end">
+          <ion-button slot="start" shape="round" (click)="add()">
+              <ion-icon slot="icon-only" name="add" >
+
+              </ion-icon>
 
           </ion-button>
 
@@ -106,14 +106,14 @@
 
 
 
-    <ion-button *ngIf="addPompiste" (click)="showForm()" expand="block" class="add-button">
+    <ion-button *ngIf="!addPompiste" (click)="showForm()" expand="block" class="add-button">
       <ion-icon name="add" slot="start"> </ion-icon>
-      ajouter un pompiste
+      add Gas station attendant
     </ion-button>
 
     <ion-button *ngIf="addPompiste" (click)="showForm()" expand="block" class="add-button">
       <ion-icon name="add" slot="start"> </ion-icon>
-      annuler
+      cancel
     </ion-button>
 
   </div>

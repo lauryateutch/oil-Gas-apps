@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuildTeamPage implements OnInit {
 
+  addPompiste:boolean;
+  pompiste: string;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+add(){
+console.log('pompiste:'+this.pompiste);
+this.addPompiste=!this.addPompiste;
+this.showForm();
+}
+
+
+
+  showForm(){
+    this.addPompiste=!this.addPompiste;
+    
+  }
+
+
+
+
+
 
 }
