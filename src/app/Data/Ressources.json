@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "nom_Ressource": "cuve Super",
+        "idStation": "1",
+        "idProduit": "3"
+    },
+    {
+        "id": "2",
+        "nom_Ressource": "cuve Gazoil",
+        "idStation": "1",
+        "idProduit": "1"
+    },
+    {
+        "id": "3",
+        "nonom_Ressource": "cuve Petrole",
+        "idStation": "1",
+        "idProduit": "2"
+    }
+]
