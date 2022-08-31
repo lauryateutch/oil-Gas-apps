@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>dailyFuelOutput</ion-title>
+    <ion-buttons slot="start"> 
+      <ion-menu-button menu="menu"></ion-menu-button>
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+
+    <ion-icon slot="start" name="calendar"></ion-icon>
+    <ion-datetime-button slot="end" color="success" date-target="true" datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+
+<ion-list>
+  <ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Team work</h2>
+      </ion-label>
+      <ion-select slot="end" interface="popover" placeholder="choose a team">
+        <ion-select-option value="apples">Equipe 1</ion-select-option>
+        <ion-select-option value="oranges">Equipe 2</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>work hour</h2>
+      </ion-label>
+      <ion-select slot="end" interface="popover" placeholder="choose hour">
+        <ion-select-option value="apples">5h/13</ion-select-option>
+        <ion-select-option value="oranges">13h/21</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Rate</h2>
+      </ion-label>
+      <ion-select slot="end" interface="popover" placeholder="choose a Rate">
+        <ion-select-option value="apples">5h/13</ion-select-option>
+        <ion-select-option value="oranges">13h/21</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-item>
+</ion-list>
+
+
+<ion-row>
+  <ion-col text-center>
+    <button ion-button block class="but" [routerLink]="['/list-lances']">
+      <p> <strong>Save</strong> </p>
+    </button>
+  </ion-col>
+</ion-row>
+
+
+
+</ion-content>

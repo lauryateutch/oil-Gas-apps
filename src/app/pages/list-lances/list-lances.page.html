@@ -1,0 +1,195 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste Lances</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+
+    <ion-icon slot="start" name="calendar"></ion-icon>
+    <ion-datetime-button slot="end" color="success" date-target="true" datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+  <ion-card>
+    <ion-card-header>
+      <div class="headerbloc">
+        <ion-card-title>total fuel sale</ion-card-title>
+        <div class="affichagevolume">
+          <p> <strong>1000000 m³</strong> </p>
+          <ion-img class="imageheader" src="assets/images/lance.jpg"></ion-img>
+
+        
+        </div>
+        
+      </div>
+      
+    </ion-card-header>
+    <ion-card-content>
+     
+
+    </ion-card-content>
+  </ion-card>
+  <ion-grid>
+    <!-- entête tableau -->
+    <div class="header">
+      <ion-row>
+        <ion-col>
+          Lances
+        </ion-col>
+        <ion-col>
+          Index Ouverture
+        </ion-col>
+        <ion-col>
+          Index Fermeture
+        </ion-col>
+        <ion-col>
+          Quantité
+        </ion-col>
+        <ion-col>
+          Montant net ligne
+        </ion-col>
+       
+      </ion-row>
+    </div>
+
+    <!-- première ligne tableau-->
+    <ion-row>
+      <ion-col>
+        lances s1
+      </ion-col>
+      <ion-col>
+        30
+      </ion-col>
+      <ion-col>
+        40
+      </ion-col>
+      <ion-col>
+        10
+      </ion-col>
+      <ion-col>
+        50000
+      </ion-col>
+    </ion-row>
+    
+    <div class="spacer">
+
+    </div>
+
+
+    <div class="spacer">
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </div>
+    <!-- deuxième ligne tableau-->
+    <ion-row>
+      <ion-col>
+        lances s2
+      </ion-col>
+      <ion-col>
+        30
+      </ion-col>
+      <ion-col>
+        40
+      </ion-col>
+      <ion-col>
+        10
+      </ion-col>
+      <ion-col>
+        50000
+      </ion-col>
+    </ion-row>
+   
+    <div class="spacer">
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </div>
+    <!-- troisième ligne -->
+    <ion-row>
+      <ion-col>
+        lances s3
+      </ion-col>
+      <ion-col>
+        30
+      </ion-col>
+      <ion-col>
+        40
+      </ion-col>
+      <ion-col>
+        10
+      </ion-col>
+      <ion-col>
+        50000
+      </ion-col>
+    </ion-row>
+
+    <!-- quatrième ligne -->
+    <div class="spacer">
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </div>
+  <ion-row>
+      <ion-col>
+        lances s4
+      </ion-col>
+      <ion-col>
+        30
+      </ion-col>
+      <ion-col>
+        40
+      </ion-col>
+      <ion-col>
+        10
+      </ion-col>
+      <ion-col>
+        50000
+      </ion-col>
+    </ion-row>
+
+    
+   
+
+  </ion-grid>
+
+</ion-content>

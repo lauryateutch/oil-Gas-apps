@@ -54,7 +54,15 @@ const routes: Routes = [
   {
     path: 'gauge-status',
     loadChildren: () => import('./pages/gauge-status/gauge-status.module').then( m => m.GaugeStatusPageModule)
+  },  {
+    path: 'daily-fuel-output',
+    loadChildren: () => import('./pages/daily-fuel-output/daily-fuel-output.module').then( m => m.DailyFuelOutputPageModule)
+  },
+  {
+    path: 'list-lances',
+    loadChildren: () => import('./pages/list-lances/list-lances.module').then( m => m.ListLancesPageModule)
   }
+
 ];
 
 @NgModule({
