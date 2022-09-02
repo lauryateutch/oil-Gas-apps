@@ -1,12 +1,11 @@
 <ion-header>
-  <ion-toolbar >
-    
-    <ion-title >save Daily Gauge</ion-title>
+  <ion-toolbar>
 
-    <ion-buttons slot="start"> 
-           <ion-menu-button menu="menu"></ion-menu-button>
+    <ion-title>save Daily Gauge</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="gauge-status"></ion-back-button>
     </ion-buttons>
-    
 
 
   </ion-toolbar>
@@ -45,19 +44,18 @@
     <div class="bloc1">
       <ion-label> Hour of work :</ion-label>
     </div>
+  
+    <div class="select">
+      <select>
+        <option value="1">5h/13</option>
+        <option value="2">13h/21</option>
+      </select>
+  
+  
+    </div>
 
-    <ion-label>
-
-      <div class="select">
-        <select>
-          <option value="1">5h/13</option>
-          <option value="2">13h/21</option>
-        </select>
-
-      </div>
-
-    </ion-label>
   </div>
+  
 
 
   <div class="bloc">
@@ -65,17 +63,16 @@
       <ion-label> work team :</ion-label>
     </div>
 
-    <ion-label>
 
-      <div class="select">
-        <select>
-          <option value="1">Equipe1</option>
-          <option value="2">Equipe2</option>
-        </select>
 
-      </div>
+    <div class="select">
+      <select>
+        <option value="1">Equipe1</option>
+        <option value="2">Equipe2</option>
+      </select>
 
-    </ion-label>
+    </div>
+
   </div>
 
 
@@ -118,13 +115,13 @@
         <ion-button fill="outline" slot="end">View</ion-button>
       </ion-item>
  -->
- <div class="affichagevolume">
-   <p> <strong>1000000 m³</strong> </p>
+      <div class="affichagevolume">
+        <p> <strong>1000000 m³</strong> </p>
 
- 
- </div>
 
- 
+      </div>
+
+
     </ion-card-content>
   </ion-card>
 
