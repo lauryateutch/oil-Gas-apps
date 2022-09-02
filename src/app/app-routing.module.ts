@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -54,7 +55,8 @@ const routes: Routes = [
   {
     path: 'gauge-status',
     loadChildren: () => import('./pages/gauge-status/gauge-status.module').then( m => m.GaugeStatusPageModule)
-  },  {
+  },
+  {
     path: 'daily-fuel-output',
     loadChildren: () => import('./pages/daily-fuel-output/daily-fuel-output.module').then( m => m.DailyFuelOutputPageModule)
   },
