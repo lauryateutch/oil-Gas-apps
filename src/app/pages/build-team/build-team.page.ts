@@ -16,9 +16,8 @@ export class BuildTeamPage implements OnInit {
   }
 
 add(){
-console.log('pompiste:'+this.pompiste);
 this.addPompiste=!this.addPompiste;
-this.showForm();
+// this.addPompiste=!this.addPompiste;
 }
 
 
