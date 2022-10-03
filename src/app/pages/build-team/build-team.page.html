@@ -86,19 +86,28 @@
 
 
   <div>
+    <ion-card>
+      <ion-item *ngFor="let pompiste of list_pompiste">
+        <ion-label>{{pompiste.nom_pompiste}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+
     <ion-card *ngIf="addPompiste">
-      <ion-item lines="none">
+      <ion-item>
 
-        <ion-input [(ngModel)]="pompiste" placeholder="chose gas station attendant">
+        <ion-button (click)="add()" expand="block" shape="round">
+          add
+        </ion-button>
+        <ion-select slot="end" interface="popover" placeholder="Resources">
+          <ion-input [(ngModel)]="pompiste" placeholder="chose gas station attendant">
 
-          <ion-button slot="start" shape="round" (click)="add()">
-              <ion-icon slot="icon-only" name="add" >
 
-              </ion-icon>
+          </ion-input>
+          <ion-select-option value="super" *ngFor="let pompiste of list_pompiste">{{pompiste.nom_pompiste}}
+          </ion-select-option>
 
-          </ion-button>
-
-        </ion-input>
+        </ion-select>
 
       </ion-item>
 
@@ -132,5 +141,7 @@
       </button>
     </ion-col>
   </ion-row>
+
+
 
 </ion-content>

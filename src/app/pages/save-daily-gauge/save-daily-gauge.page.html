@@ -26,15 +26,14 @@
       <ng-template>
         <ion-datetime id="datetime"></ion-datetime>
       </ng-template>
-    </ion-modal>
+    </ion-modal>ig
   </ion-item>
 
   <ion-item>
     <ion-icon slot="start" name="cog"></ion-icon>
     <ion-select slot="end" interface="popover" placeholder="Resources">
-      <ion-select-option value="super">Super</ion-select-option>
-      <ion-select-option value="gasoil">Gasoil</ion-select-option>
-      <ion-select-option value="petrole">Petrole</ion-select-option>
+      <ion-select-option value="super" *ngFor="let ressource of list_ressources"></ion-select-option>
+     
     </ion-select>
 
   </ion-item>
@@ -68,7 +67,7 @@
     <div class="select">
       <select>
         <option value="1">Equipe1</option>
-        <option value="2">Equipe2</option>
+        
       </select>
 
     </div>
